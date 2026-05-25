@@ -60,8 +60,9 @@
         /* Toggle Dark Mode with Icons */
         .theme-toggle-wrapper {
             position: absolute;
-            top: 15px;
-            right: 15px;
+            top: 20px; /* Disesuaikan agar sejajar rapi dengan Tabs */
+            right: 20px;
+            z-index: 10;
         }
 
         .theme-toggle-label {
@@ -105,12 +106,15 @@
             transform: translateX(26px);
         }
 
-        /* Tabs */
+        /* Tabs - Dibuat Absolute agar Fix dan Sejajar */
         .tabs {
+            position: absolute;
+            top: 20px; /* Sejajar dengan toggle */
+            left: 50%;
+            transform: translateX(-50%); /* Menjaga tab tetap persis di tengah */
             display: flex;
             justify-content: center;
             gap: 10px;
-            margin-bottom: 2vh;
             z-index: 10;
         }
 
